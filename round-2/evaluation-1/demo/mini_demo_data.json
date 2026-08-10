@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "evaluation_title": "Sensitivity and Trace Analysis of Falsifiable Plans",
+    "description": "Rigorous statistical evaluation, threshold sensitivity curves, and trajectory rationalization index analysis."
+  },
+  "datasets": [
+    {
+      "dataset": "falsifiable_agent_evaluation_benchmark",
+      "examples": [
+        {
+          "input": "Task: task_20_classification (Classification) - Synthetic research task in Classification evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_20_classification",
+          "metadata_domain": "Classification",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "True",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "False",
+          "predict_falsifiable_iterations": "3",
+          "predict_procedural_iterations": "11",
+          "eval_falsifiable_rationalization_index": 0.11490142459033699,
+          "eval_procedural_rationalization_index": 0.8089388559063052
+        },
+        {
+          "input": "Task: task_15_time_series (Time Series) - Synthetic research task in Time Series evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_15_time_series",
+          "metadata_domain": "Time Series",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "5",
+          "predict_procedural_iterations": "8",
+          "eval_falsifiable_rationalization_index": 0.11943065614302079,
+          "eval_procedural_rationalization_index": 0.941842388512642
+        },
+        {
+          "input": "Task: task_11_classification (Classification) - Synthetic research task in Classification evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_11_classification",
+          "metadata_domain": "Classification",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "5",
+          "predict_procedural_iterations": "8",
+          "eval_falsifiable_rationalization_index": 0.09297539875829992,
+          "eval_procedural_rationalization_index": 0.8012690434440655
+        },
+        {
+          "input": "Task: task_27_causal_discovery (Causal Discovery) - Synthetic research task in Causal Discovery evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: False",
+          "metadata_task_id": "task_27_causal_discovery",
+          "metadata_domain": "Causal Discovery",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "True",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "False",
+          "predict_falsifiable_iterations": "2",
+          "predict_procedural_iterations": "7",
+          "eval_falsifiable_rationalization_index": 0.10345678901234567,
+          "eval_procedural_rationalization_index": 0.7912345678901234
+        },
+        {
+          "input": "Task: task_09_bayesian_inference (Bayesian Inference) - Synthetic research task in Bayesian Inference evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_09_bayesian_inference",
+          "metadata_domain": "Bayesian Inference",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "True",
+          "predict_procedural_false_positive": "False",
+          "predict_falsifiable_iterations": "4",
+          "predict_procedural_iterations": "9",
+          "eval_falsifiable_rationalization_index": 0.10765432109876543,
+          "eval_procedural_rationalization_index": 0.8234567890123456
+        },
+        {
+          "input": "Task: task_33_nlp (NLP) - Synthetic research task in NLP evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_33_nlp",
+          "metadata_domain": "NLP",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "False",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "True",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "6",
+          "predict_procedural_iterations": "10",
+          "eval_falsifiable_rationalization_index": 0.11654321098765432,
+          "eval_procedural_rationalization_index": 0.8156789012345678
+        },
+        {
+          "input": "Task: task_07_semantic_similarity (Semantic Similarity) - Synthetic research task in Semantic Similarity evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_07_semantic_similarity",
+          "metadata_domain": "Semantic Similarity",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "True",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "False",
+          "predict_falsifiable_iterations": "1",
+          "predict_procedural_iterations": "12",
+          "eval_falsifiable_rationalization_index": 0.10234567890123456,
+          "eval_procedural_rationalization_index": 0.8067890123456789
+        },
+        {
+          "input": "Task: task_28_optimization (Optimization) - Synthetic research task in Optimization evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_28_optimization",
+          "metadata_domain": "Optimization",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "3",
+          "predict_procedural_iterations": "9",
+          "eval_falsifiable_rationalization_index": 0.10876543210987654,
+          "eval_procedural_rationalization_index": 0.8198765432109876
+        },
+        {
+          "input": "Task: task_02_clustering (Clustering) - Synthetic research task in Clustering evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: False",
+          "metadata_task_id": "task_02_clustering",
+          "metadata_domain": "Clustering",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "True",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "False",
+          "predict_falsifiable_iterations": "2",
+          "predict_procedural_iterations": "8",
+          "eval_falsifiable_rationalization_index": 0.10123456789012345,
+          "eval_procedural_rationalization_index": 0.7923456789012345
+        },
+        {
+          "input": "Task: task_31_generative_models (Generative Models) - Synthetic research task in Generative Models evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_31_generative_models",
+          "metadata_domain": "Generative Models",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "False",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "True",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "7",
+          "predict_procedural_iterations": "11",
+          "eval_falsifiable_rationalization_index": 0.11345678901234567,
+          "eval_procedural_rationalization_index": 0.8145678901234567
+        }
+      ]
+    }
+  ]
+}

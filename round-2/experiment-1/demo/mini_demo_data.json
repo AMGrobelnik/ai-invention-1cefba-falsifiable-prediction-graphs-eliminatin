@@ -1,0 +1,30 @@
+{
+  "datasets": [
+    {
+      "dataset": "synthetic_classification_3",
+      "examples": [
+        {
+          "input": "{\"feat_0\": -0.8648120257506973, \"feat_1\": -2.0185134588849643, \"feat_2\": -1.70696603353646, \"feat_3\": 1.1135406739633866, \"feat_4\": -0.06255692115728953, \"feat_5\": -0.00029843019070295394, \"feat_6\": -0.3470026011149394, \"feat_7\": -1.4325657896878894, \"feat_8\": -0.6369073196495351, \"feat_9\": -0.9591119038667839}",
+          "output": "1",
+          "metadata_row_index": 0,
+          "metadata_feature_names": ["feat_0", "feat_1", "feat_2", "feat_3", "feat_4", "feat_5", "feat_6", "feat_7", "feat_8", "feat_9"],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"feat_0\": 0.5172223039142886, \"feat_1\": 1.233791154964245, \"feat_2\": -0.38808246829165505, \"feat_3\": -1.3821940222645959, \"feat_4\": -1.1670133995964471, \"feat_5\": 0.15172959287053375, \"feat_6\": -1.8744952270165216, \"feat_7\": 2.525407082186024, \"feat_8\": -0.8842217428174017, \"feat_9\": 0.10502521589661962}",
+          "output": "0",
+          "metadata_row_index": 1,
+          "metadata_feature_names": ["feat_0", "feat_1", "feat_2", "feat_3", "feat_4", "feat_5", "feat_6", "feat_7", "feat_8", "feat_9"],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"feat_0\": 0.6994255804507494, \"feat_1\": -0.7225920669315249, \"feat_2\": -1.4355279054044527, \"feat_3\": -0.8252440725484883, \"feat_4\": 1.501423333864952, \"feat_5\": -0.3070654319004478, \"feat_6\": -1.326030931722363, \"feat_7\": 0.43737905664378746, \"feat_8\": -0.24013818802706988, \"feat_9\": 1.1168355835771069}",
+          "output": "0",
+          "metadata_row_index": 2,
+          "metadata_feature_names": ["feat_0", "feat_1", "feat_2", "feat_3", "feat_4", "feat_5", "feat_6", "feat_7", "feat_8", "feat_9"],
+          "metadata_task_type": "classification"
+        }
+      ]
+    }
+  ]
+}

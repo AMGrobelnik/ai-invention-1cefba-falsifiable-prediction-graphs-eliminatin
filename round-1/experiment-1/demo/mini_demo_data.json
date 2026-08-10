@@ -1,0 +1,76 @@
+{
+  "dataset": "falsifiable_agent_benchmark_demo",
+  "description": "Curated subset of research benchmark tasks for the Falsifiable Prediction Graph Planner vs Standard Procedural Planner comparison demo. Each task is either a true-positive empirical task or a negative control failure condition.",
+  "tasks": [
+    {
+      "task_id": "task_01_regression",
+      "domain": "Regression",
+      "description": "Empirical regression task: predict housing prices from demographic features using linear models with regularization.",
+      "is_negative_control": false,
+      "ground_truth_success": true
+    },
+    {
+      "task_id": "task_02_classification",
+      "domain": "Classification",
+      "description": "Empirical classification task: medical diagnosis from patient biomarkers using gradient-boosted trees.",
+      "is_negative_control": false,
+      "ground_truth_success": true
+    },
+    {
+      "task_id": "task_03_nlp",
+      "domain": "NLP",
+      "description": "Empirical NLP task: sentiment analysis on product reviews using fine-tuned transformer classifiers.",
+      "is_negative_control": false,
+      "ground_truth_success": true
+    },
+    {
+      "task_id": "task_04_time_series",
+      "domain": "Time Series",
+      "description": "Empirical time series task: electricity demand forecasting using ARIMA and neural sequence models.",
+      "is_negative_control": false,
+      "ground_truth_success": true
+    },
+    {
+      "task_id": "task_05_causal_discovery",
+      "domain": "Causal Discovery",
+      "description": "Empirical causal discovery task: infer gene regulatory network structure from perturbation data.",
+      "is_negative_control": false,
+      "ground_truth_success": true
+    },
+    {
+      "task_id": "task_06_regression_nc",
+      "domain": "Regression",
+      "description": "Negative control regression task: predict random noise from housing features - no true signal exists.",
+      "is_negative_control": true,
+      "ground_truth_success": false
+    },
+    {
+      "task_id": "task_07_classification_nc",
+      "domain": "Classification",
+      "description": "Negative control classification task: classify random labels from patient biomarkers - no true signal exists.",
+      "is_negative_control": true,
+      "ground_truth_success": false
+    },
+    {
+      "task_id": "task_08_nlp_nc",
+      "domain": "NLP",
+      "description": "Negative control NLP task: predict shuffled sentiment labels from product reviews - no true signal exists.",
+      "is_negative_control": true,
+      "ground_truth_success": false
+    },
+    {
+      "task_id": "task_09_time_series_nc",
+      "domain": "Time Series",
+      "description": "Negative control time series task: forecast permuted electricity demand - no true signal exists.",
+      "is_negative_control": true,
+      "ground_truth_success": false
+    },
+    {
+      "task_id": "task_10_causal_discovery_nc",
+      "domain": "Causal Discovery",
+      "description": "Negative control causal discovery task: infer structure from randomized perturbation data - no true signal exists.",
+      "is_negative_control": true,
+      "ground_truth_success": false
+    }
+  ]
+}
