@@ -1,0 +1,34 @@
+{
+  "type": "line",
+  "title": "Threshold Sensitivity Analysis Across Refutation Bounds",
+  "xlabel": "Refutation Threshold τ",
+  "ylabel": "Rate (0.0–1.0)",
+  "aspect": "16:9",
+  "ylim": [0, 1],
+  "series": [
+    {
+      "label": "FPG Detection Rate",
+      "x": [0.00, 0.05, 0.10, 0.15, 0.20],
+      "values": [0.95, 0.93, 0.90, 0.88, 0.87],
+      "band": [0.03, 0.04, 0.05, 0.06, 0.07]
+    },
+    {
+      "label": "FPG False Positive Rate",
+      "x": [0.00, 0.05, 0.10, 0.15, 0.20],
+      "values": [0.12, 0.09, 0.06, 0.03, 0.01],
+      "band": [0.02, 0.02, 0.03, 0.02, 0.01]
+    },
+    {
+      "label": "Procedural Detection Rate",
+      "x": [0.00, 0.05, 0.10, 0.15, 0.20],
+      "values": [0.38, 0.38, 0.38, 0.38, 0.38],
+      "band": [0.05, 0.05, 0.05, 0.05, 0.05]
+    },
+    {
+      "label": "Procedural False Positive Rate",
+      "x": [0.00, 0.05, 0.10, 0.15, 0.20],
+      "values": [0.61, 0.61, 0.61, 0.61, 0.61],
+      "band": [0.06, 0.06, 0.06, 0.06, 0.06]
+    }
+  ]
+}

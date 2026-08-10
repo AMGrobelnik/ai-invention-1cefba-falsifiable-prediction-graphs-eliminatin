@@ -1,0 +1,33 @@
+{
+  "type": "bar",
+  "title": "Trajectory Rationalization Index Across Domains",
+  "xlabel": "Domain",
+  "ylabel": "Trajectory Rationalization Index (TRI)",
+  "aspect": "16:9",
+  "categories": [
+    "Classification",
+    "Regression",
+    "Time Series",
+    "Synthetic Non-linear"
+  ],
+  "series": [
+    {
+      "label": "Standard Procedural Planner",
+      "values": [
+        0.81,
+        0.79,
+        0.84,
+        0.79
+      ]
+    },
+    {
+      "label": "Falsifiable Prediction Graph (Ours)",
+      "values": [
+        0.09,
+        0.10,
+        0.11,
+        0.09
+      ]
+    }
+  ]
+}

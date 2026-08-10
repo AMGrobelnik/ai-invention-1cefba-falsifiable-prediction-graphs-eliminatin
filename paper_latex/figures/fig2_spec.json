@@ -1,0 +1,35 @@
+{
+  "type": "bar",
+  "title": "Negative Result Detection and False Positive Rates",
+  "xlabel": "Evaluation Metric",
+  "ylabel": "Rate",
+  "aspect": "16:9",
+  "categories": [
+    "Negative Result Detection Rate (↑)",
+    "False Positive Rate (↓)"
+  ],
+  "series": [
+    {
+      "label": "Standard Procedural Planner",
+      "values": [
+        0.33,
+        0.67
+      ],
+      "errors": [
+        0.08,
+        0.08
+      ]
+    },
+    {
+      "label": "Falsifiable Prediction Graph (Ours)",
+      "values": [
+        1.00,
+        0.00
+      ],
+      "errors": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}
