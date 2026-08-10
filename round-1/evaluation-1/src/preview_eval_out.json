@@ -1,0 +1,59 @@
+{
+  "metrics_agg": {
+    "negative_result_detection_rate_falsifiable": 1.0,
+    "negative_result_detection_rate_procedural": 0.4,
+    "false_positive_rate_falsifiable": 0.0,
+    "false_positive_rate_procedural": 0.6,
+    "mean_search_iterations_falsifiable": 4.8,
+    "mean_search_iterations_procedural": 9.0,
+    "precision_falsifiable": 1.0,
+    "recall_falsifiable": 1.0,
+    "f1_score_falsifiable": 1.0,
+    "p_value_detection_rate": 0.010835913312693499,
+    "p_value_search_efficiency": 0.00010315056238804702,
+    "total_benchmark_tasks": 10
+  },
+  "datasets": [
+    {
+      "dataset": "agent_falsifiability_benchmark",
+      "examples": [
+        {
+          "input": "Task: task_01_california_housing (Regression) - California housing price prediction with feature scaling and ensemble gradient boosting.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_01_california_housing",
+          "metadata_domain": "Regression",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 5,
+          "eval_procedural_iterations": 12
+        },
+        {
+          "input": "Task: task_02_breast_cancer (Classification) - Breast cancer diagnostic binary classification with Random Forest vs noise feature overload.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_02_breast_cancer",
+          "metadata_domain": "Classification",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": true,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": false,
+          "eval_falsifiable_iterations": 6,
+          "eval_procedural_iterations": 10
+        },
+        {
+          "input": "Task: task_03_diabetes (Regression) - Diabetes progression regression task with Gradient Boosting and label permutation control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_03_diabetes",
+          "metadata_domain": "Regression",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 4,
+          "eval_procedural_iterations": 10
+        }
+      ]
+    }
+  ]
+}

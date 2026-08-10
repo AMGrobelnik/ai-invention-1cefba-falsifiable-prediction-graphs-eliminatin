@@ -1,0 +1,143 @@
+{
+  "metrics_agg": {
+    "negative_result_detection_rate_falsifiable": 1.0,
+    "negative_result_detection_rate_procedural": 0.4,
+    "false_positive_rate_falsifiable": 0.0,
+    "false_positive_rate_procedural": 0.6,
+    "mean_search_iterations_falsifiable": 4.8,
+    "mean_search_iterations_procedural": 9.0,
+    "precision_falsifiable": 1.0,
+    "recall_falsifiable": 1.0,
+    "f1_score_falsifiable": 1.0,
+    "p_value_detection_rate": 0.010835913312693499,
+    "p_value_search_efficiency": 0.00010315056238804702,
+    "total_benchmark_tasks": 10
+  },
+  "datasets": [
+    {
+      "dataset": "agent_falsifiability_benchmark",
+      "examples": [
+        {
+          "input": "Task: task_01_california_housing (Regression) - California housing price prediction with feature scaling and ensemble gradient boosting.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_01_california_housing",
+          "metadata_domain": "Regression",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 5,
+          "eval_procedural_iterations": 12
+        },
+        {
+          "input": "Task: task_02_breast_cancer (Classification) - Breast cancer diagnostic binary classification with Random Forest vs noise feature overload.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_02_breast_cancer",
+          "metadata_domain": "Classification",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": true,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": false,
+          "eval_falsifiable_iterations": 6,
+          "eval_procedural_iterations": 10
+        },
+        {
+          "input": "Task: task_03_diabetes (Regression) - Diabetes progression regression task with Gradient Boosting and label permutation control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_03_diabetes",
+          "metadata_domain": "Regression",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 4,
+          "eval_procedural_iterations": 10
+        },
+        {
+          "input": "Task: task_04_wine (Classification) - Wine chemical composition multi-class classification with Random Forest and label permutation control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_04_wine",
+          "metadata_domain": "Classification",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": true,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": false,
+          "eval_falsifiable_iterations": 5,
+          "eval_procedural_iterations": 6
+        },
+        {
+          "input": "Task: task_05_digits (Classification) - Handwritten digits image classification with Gradient Boosting and label permutation control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_05_digits",
+          "metadata_domain": "Classification",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": true,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": false,
+          "eval_falsifiable_iterations": 4,
+          "eval_procedural_iterations": 10
+        },
+        {
+          "input": "Task: task_06_iris (Classification) - Classic Iris flower classification with Random Forest and feature shuffling control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_06_iris",
+          "metadata_domain": "Classification",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 6,
+          "eval_procedural_iterations": 9
+        },
+        {
+          "input": "Task: task_07_synthetic_classification (Classification) - Synthetic binary classification with informative features and label permutation control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_07_synthetic_classification",
+          "metadata_domain": "Classification",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 4,
+          "eval_procedural_iterations": 9
+        },
+        {
+          "input": "Task: task_08_synthetic_regression (Regression) - Synthetic regression task with non-linear relationships and label permutation control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_08_synthetic_regression",
+          "metadata_domain": "Regression",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": true,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": false,
+          "eval_falsifiable_iterations": 4,
+          "eval_procedural_iterations": 9
+        },
+        {
+          "input": "Task: task_09_synthetic_classification_noisy (Classification) - Noisy synthetic classification with feature destruction control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_09_synthetic_classification_noisy",
+          "metadata_domain": "Classification",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 5,
+          "eval_procedural_iterations": 8
+        },
+        {
+          "input": "Task: task_10_synthetic_nonlinear_regression (Regression) - Highly non-linear synthetic regression with Random Forest and label permutation control.",
+          "output": "Ground truth outcome: success_for_tp_failure_for_nc",
+          "metadata_task_id": "task_10_synthetic_nonlinear_regression",
+          "metadata_domain": "Regression",
+          "predict_falsifiable_detected_negative": true,
+          "predict_procedural_detected_negative": false,
+          "predict_falsifiable_false_positive": false,
+          "predict_procedural_false_positive": true,
+          "eval_falsifiable_iterations": 5,
+          "eval_procedural_iterations": 7
+        }
+      ]
+    }
+  ]
+}

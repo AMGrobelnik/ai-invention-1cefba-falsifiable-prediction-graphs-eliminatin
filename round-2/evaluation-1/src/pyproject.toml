@@ -1,0 +1,20 @@
+[project]
+name = "gen_art_evaluation_1"
+version = "1.0.0"
+description = "Sensitivity and Trace Analysis of Falsifiable Plans"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy==2.5.1",
+    "pandas==3.0.5",
+    "scipy==1.18.0",
+    "scikit-learn==1.9.0",
+    "jsonschema==4.26.0",
+    "jsonschema-specifications==2025.9.1",
+    "referencing==0.37.0",
+    "rpds-py==2026.6.3",
+    "requests==2.34.2",
+    "urllib3==2.7.0",
+    "pydantic==2.13.4",
+    "pydantic-core==2.46.4",
+    "typing_extensions==4.16.0"
+]

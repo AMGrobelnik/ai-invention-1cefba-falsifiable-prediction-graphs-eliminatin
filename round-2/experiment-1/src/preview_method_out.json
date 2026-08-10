@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "experiment": "Falsifiable Plans for Agent Negative Result Detection",
+    "runtime_seconds": 7.93070650100708
+  },
+  "metrics_agg": {
+    "detection_rate_falsifiable": 0.8714285714285714,
+    "detection_rate_procedural": 0.38571428571428573,
+    "false_positive_rate_falsifiable": 0.12857142857142856,
+    "false_positive_rate_procedural": 0.6142857142857143
+  },
+  "datasets": [
+    {
+      "dataset": "synthetic_classification_3",
+      "examples": [
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.0, \"planner\": \"procedural\"}",
+          "output": "1",
+          "metadata_task_type": "classification",
+          "predict_planner": "procedural",
+          "eval_score": 0.43999999999999995
+        },
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.0, \"planner\": \"falsifiable_graph\"}",
+          "output": "1",
+          "metadata_task_type": "classification",
+          "predict_planner": "falsifiable_graph",
+          "eval_score": 0.43999999999999995
+        },
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.01, \"planner\": \"procedural\"}",
+          "output": "1",
+          "metadata_task_type": "classification",
+          "predict_planner": "procedural",
+          "eval_score": 0.43999999999999995
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic_regression_4",
+      "examples": [
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.0, \"planner\": \"procedural\"}",
+          "output": "1",
+          "metadata_task_type": "regression",
+          "predict_planner": "procedural",
+          "eval_score": 32056.939935151633
+        },
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.0, \"planner\": \"falsifiable_graph\"}",
+          "output": "1",
+          "metadata_task_type": "regression",
+          "predict_planner": "falsifiable_graph",
+          "eval_score": 32056.939935151633
+        },
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.01, \"planner\": \"procedural\"}",
+          "output": "1",
+          "metadata_task_type": "regression",
+          "predict_planner": "procedural",
+          "eval_score": 32056.939935151633
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic_classification_1",
+      "examples": [
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.0, \"planner\": \"procedural\"}",
+          "output": "1",
+          "metadata_task_type": "classification",
+          "predict_planner": "procedural",
+          "eval_score": 0.43999999999999995
+        },
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.0, \"planner\": \"falsifiable_graph\"}",
+          "output": "1",
+          "metadata_task_type": "classification",
+          "predict_planner": "falsifiable_graph",
+          "eval_score": 0.43999999999999995
+        },
+        {
+          "input": "{\"condition\": \"true_positive\", \"threshold\": 0.01, \"planner\": \"procedural\"}",
+          "output": "1",
+          "metadata_task_type": "classification",
+          "predict_planner": "procedural",
+          "eval_score": 0.43999999999999995
+        }
+      ]
+    }
+  ]
+}

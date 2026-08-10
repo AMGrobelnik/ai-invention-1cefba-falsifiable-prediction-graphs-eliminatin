@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "negative_result_detection_rate_falsifiable": 1.0,
+    "negative_result_detection_rate_procedural": 0.3333333333333333,
+    "false_positive_rate_falsifiable": 0.0,
+    "false_positive_rate_procedural": 0.6666666666666666,
+    "mean_search_iterations_falsifiable": 4.5,
+    "mean_search_iterations_procedural": 9.7,
+    "p_value_detection_rate": 0.00019990004997501247,
+    "p_value_search_efficiency": 3.309128875677958e-19,
+    "total_benchmark_tasks": 30,
+    "total_negative_controls": 15
+  },
+  "datasets": [
+    {
+      "dataset": "falsifiable_agent_benchmark_30",
+      "examples": [
+        {
+          "input": "Task: task_20_classification (Classification) - Synthetic research task in Classification evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_20_classification",
+          "metadata_domain": "Classification",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "True",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "False",
+          "predict_falsifiable_iterations": "3",
+          "predict_procedural_iterations": "11"
+        },
+        {
+          "input": "Task: task_15_time_series (Time Series) - Synthetic research task in Time Series evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_15_time_series",
+          "metadata_domain": "Time Series",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "5",
+          "predict_procedural_iterations": "8"
+        },
+        {
+          "input": "Task: task_11_classification (Classification) - Synthetic research task in Classification evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_11_classification",
+          "metadata_domain": "Classification",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "5",
+          "predict_procedural_iterations": "8"
+        }
+      ]
+    }
+  ]
+}

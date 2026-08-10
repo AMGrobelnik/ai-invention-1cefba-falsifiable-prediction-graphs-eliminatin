@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "evaluation_title": "Sensitivity and Trace Analysis of Falsifiable Plans",
+    "description": "Rigorous statistical evaluation, threshold sensitivity curves, and trajectory rationalization index analysis."
+  },
+  "metrics_agg": {
+    "negative_result_detection_rate_falsifiable": 1.0,
+    "negative_result_detection_rate_procedural": 0.3333333333333333,
+    "false_positive_rate_falsifiable": 0.0,
+    "false_positive_rate_procedural": 0.6666666666666666,
+    "mean_search_iterations_falsifiable": 4.5,
+    "mean_search_iterations_procedural": 9.7,
+    "p_value_detection_rate_fisher": 0.00019990004997501247,
+    "p_value_detection_rate_chi2": 0.0004908786448402855,
+    "chi2_stat_detection_rate": 12.149999999999999,
+    "cohens_h_detection_rate": 1.9106332362490186,
+    "p_value_false_positive_fisher": 0.00019990004997501253,
+    "p_value_false_positive_chi2": 0.0004908786448402841,
+    "chi2_stat_false_positive": 12.15,
+    "cohens_h_false_positive": -1.9106332362490186,
+    "threshold_sensitivity_fpr_falsifiable": 0.00075,
+    "threshold_sensitivity_fnr_falsifiable": 0.00075,
+    "threshold_sensitivity_fpr_procedural": 0.6886666666666666,
+    "threshold_sensitivity_fnr_procedural": 0.6831666666666667,
+    "trajectory_rationalization_index_falsifiable": 0.09567542312494545,
+    "trajectory_rationalization_index_procedural": 0.8067874557088671,
+    "total_benchmark_tasks": 30,
+    "total_negative_controls": 15
+  },
+  "datasets": [
+    {
+      "dataset": "falsifiable_agent_evaluation_benchmark",
+      "examples": [
+        {
+          "input": "Task: task_20_classification (Classification) - Synthetic research task in Classification evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_20_classification",
+          "metadata_domain": "Classification",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "True",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "False",
+          "predict_falsifiable_iterations": "3",
+          "predict_procedural_iterations": "11",
+          "eval_falsifiable_rationalization_index": 0.11490142459033699,
+          "eval_procedural_rationalization_index": 0.8089388559063052
+        },
+        {
+          "input": "Task: task_15_time_series (Time Series) - Synthetic research task in Time Series evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_15_time_series",
+          "metadata_domain": "Time Series",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "5",
+          "predict_procedural_iterations": "8",
+          "eval_falsifiable_rationalization_index": 0.11943065614302079,
+          "eval_procedural_rationalization_index": 0.941842388512642
+        },
+        {
+          "input": "Task: task_11_classification (Classification) - Synthetic research task in Classification evaluating method robustness and falsifiability.",
+          "output": "Ground truth negative control: True",
+          "metadata_task_id": "task_11_classification",
+          "metadata_domain": "Classification",
+          "metadata_is_negative_control": "True",
+          "predict_falsifiable_detected_negative": "True",
+          "predict_procedural_detected_negative": "False",
+          "predict_falsifiable_false_positive": "False",
+          "predict_procedural_false_positive": "True",
+          "predict_falsifiable_iterations": "5",
+          "predict_procedural_iterations": "8",
+          "eval_falsifiable_rationalization_index": 0.09297539875829992,
+          "eval_procedural_rationalization_index": 0.8012690434440655
+        }
+      ]
+    }
+  ]
+}

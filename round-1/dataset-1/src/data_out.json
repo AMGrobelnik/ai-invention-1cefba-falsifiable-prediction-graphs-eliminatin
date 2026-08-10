@@ -1,0 +1,108 @@
+{
+  "benchmark_name": "Agent Falsifiability Benchmark Suite",
+  "version": "1.0.0",
+  "description": "10 empirical ML tasks complete with baseline, true positive intervention, and negative control failure condition for evaluating agent planning and falsification.",
+  "total_tasks": 10,
+  "tasks": [
+    {
+      "task_id": "task_01_california_housing",
+      "domain": "Regression",
+      "description": "California housing price prediction with feature scaling and ensemble gradient boosting.",
+      "baseline_metric": 0.5758549611440127,
+      "true_positive_metric": 0.7756433164710084,
+      "negative_control_metric": -0.0023949671346465973,
+      "refutation_criteria": "True positive delta > 0.05 R2 gain over baseline; negative control R2 <= 0.0 (or negative/near-zero).",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_02_breast_cancer",
+      "domain": "Classification",
+      "description": "Breast cancer diagnostic binary classification with Random Forest vs noise feature overload.",
+      "baseline_metric": 0.956140350877193,
+      "true_positive_metric": 0.9649122807017544,
+      "negative_control_metric": 0.9649122807017544,
+      "refutation_criteria": "True positive accuracy >= 0.95; negative control accuracy drops by >= 0.15 under noise contamination.",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_03_diabetes",
+      "domain": "Regression",
+      "description": "Diabetes progression regression task with Gradient Boosting and label permutation control.",
+      "baseline_metric": 0.41915292635986545,
+      "true_positive_metric": 0.4550495525363134,
+      "negative_control_metric": -0.5382359165891346,
+      "refutation_criteria": "True positive R2 > baseline; negative control R2 <= 0.0.",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_04_wine",
+      "domain": "Classification",
+      "description": "Wine chemical composition multi-class classification with Random Forest and label permutation control.",
+      "baseline_metric": 1.0,
+      "true_positive_metric": 1.0,
+      "negative_control_metric": 0.5277777777777778,
+      "refutation_criteria": "True positive accuracy >= 0.90; negative control accuracy near random chance (~0.33).",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_05_digits",
+      "domain": "Classification",
+      "description": "Handwritten digits image classification with Gradient Boosting and label permutation control.",
+      "baseline_metric": 0.975,
+      "true_positive_metric": 0.9694444444444444,
+      "negative_control_metric": 0.1527777777777778,
+      "refutation_criteria": "True positive accuracy >= 0.90; negative control accuracy near random chance (~0.10).",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_06_iris",
+      "domain": "Classification",
+      "description": "Classic Iris flower classification with Random Forest and feature shuffling control.",
+      "baseline_metric": 1.0,
+      "true_positive_metric": 1.0,
+      "negative_control_metric": 0.36666666666666664,
+      "refutation_criteria": "True positive accuracy >= 0.95; negative control accuracy drops below 0.50.",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_07_synthetic_classification",
+      "domain": "Classification",
+      "description": "Synthetic binary classification with informative features and label permutation control.",
+      "baseline_metric": 0.815,
+      "true_positive_metric": 0.895,
+      "negative_control_metric": 0.5775,
+      "refutation_criteria": "True positive accuracy > baseline + 0.05; negative control accuracy near 0.50.",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_08_synthetic_regression",
+      "domain": "Regression",
+      "description": "Synthetic regression task with non-linear relationships and label permutation control.",
+      "baseline_metric": 0.9999992071407127,
+      "true_positive_metric": 0.94060018339248,
+      "negative_control_metric": -0.05283639767533388,
+      "refutation_criteria": "True positive R2 > 0.85; negative control R2 <= 0.0.",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_09_synthetic_classification_noisy",
+      "domain": "Classification",
+      "description": "Noisy synthetic classification with feature destruction control.",
+      "baseline_metric": 0.7475,
+      "true_positive_metric": 0.8675,
+      "negative_control_metric": 0.455,
+      "refutation_criteria": "True positive accuracy > baseline; negative control accuracy drops to random chance (0.50).",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    },
+    {
+      "task_id": "task_10_synthetic_nonlinear_regression",
+      "domain": "Regression",
+      "description": "Highly non-linear synthetic regression with Random Forest and label permutation control.",
+      "baseline_metric": -0.023842450639012247,
+      "true_positive_metric": 0.48518573647079033,
+      "negative_control_metric": -0.021112082863232517,
+      "refutation_criteria": "True positive R2 significantly higher than linear baseline (delta > 0.30); negative control R2 <= 0.0.",
+      "ground_truth_outcome": "success_for_tp_failure_for_nc"
+    }
+  ]
+}

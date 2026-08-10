@@ -1,0 +1,552 @@
+{
+  "datasets": [
+    {
+      "dataset": "california_housing",
+      "examples": [
+        {
+          "input": "{\"MedInc\": 8.3252, \"HouseAge\": 41.0, \"AveRooms\": 6.984126984126984, \"AveBedrms\": 1.0238095238095237, \"Population\": 322.0, \"AveOccup\": 2.5555555555555554, \"Latitude\": 37.88, \"Longitude\": -122.23}",
+          "output": "4.526",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "MedInc",
+            "HouseAge",
+            "AveRooms",
+            "AveBedrms",
+            "Population",
+            "AveOccup",
+            "Latitude",
+            "Longitude"
+          ],
+          "metadata_task_type": "regression"
+        },
+        {
+          "input": "{\"MedInc\": 8.3014, \"HouseAge\": 21.0, \"AveRooms\": 6.238137082601054, \"AveBedrms\": 0.9718804920913884, \"Population\": 2401.0, \"AveOccup\": 2.109841827768014, \"Latitude\": 37.86, \"Longitude\": -122.22}",
+          "output": "3.585",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "MedInc",
+            "HouseAge",
+            "AveRooms",
+            "AveBedrms",
+            "Population",
+            "AveOccup",
+            "Latitude",
+            "Longitude"
+          ],
+          "metadata_task_type": "regression"
+        }
+      ]
+    },
+    {
+      "dataset": "breast_cancer",
+      "examples": [
+        {
+          "input": "{\"mean radius\": 17.99, \"mean texture\": 10.38, \"mean perimeter\": 122.8, \"mean area\": 1001.0, \"mean smoothness\": 0.1184, \"mean compactness\": 0.2776, \"mean concavity\": 0.3001, \"mean concave points\": 0.1471, \"mean symmetry\": 0.2419, \"mean fractal dimension\": 0.07871, \"radius error\": 1.095, \"texture error\": 0.9053, \"perimeter error\": 8.589, \"area error\": 153.4, \"smoothness error\": 0.006399, \"compactness error\": 0.04904, \"concavity error\": 0.05373, \"concave points error\": 0.01587, \"symmetry error\": 0.03003, \"fractal dimension error\": 0.006193, \"worst radius\": 25.38, \"worst texture\": 17.33, \"worst perimeter\": 184.6, \"worst area\": 2019.0, \"worst smoothness\": 0.1622, \"worst compactness\": 0.6656, \"worst concavity\": 0.7119, \"worst concave points\": 0.2654, \"worst symmetry\": 0.4601, \"worst fractal dimension\": 0.1189}",
+          "output": "0",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "mean radius",
+            "mean texture",
+            "mean perimeter",
+            "mean area",
+            "mean smoothness",
+            "mean compactness",
+            "mean concavity",
+            "mean concave points",
+            "mean symmetry",
+            "mean fractal dimension",
+            "radius error",
+            "texture error",
+            "perimeter error",
+            "area error",
+            "smoothness error",
+            "compactness error",
+            "concavity error",
+            "concave points error",
+            "symmetry error",
+            "fractal dimension error",
+            "worst radius",
+            "worst texture",
+            "worst perimeter",
+            "worst area",
+            "worst smoothness",
+            "worst compactness",
+            "worst concavity",
+            "worst concave points",
+            "worst symmetry",
+            "worst fractal dimension"
+          ],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"mean radius\": 20.57, \"mean texture\": 17.77, \"mean perimeter\": 132.9, \"mean area\": 1326.0, \"mean smoothness\": 0.08474, \"mean compactness\": 0.07864, \"mean concavity\": 0.0869, \"mean concave points\": 0.07017, \"mean symmetry\": 0.1812, \"mean fractal dimension\": 0.05667, \"radius error\": 0.5435, \"texture error\": 0.7339, \"perimeter error\": 3.398, \"area error\": 74.08, \"smoothness error\": 0.005225, \"compactness error\": 0.01308, \"concavity error\": 0.0186, \"concave points error\": 0.0134, \"symmetry error\": 0.01389, \"fractal dimension error\": 0.003532, \"worst radius\": 24.99, \"worst texture\": 23.41, \"worst perimeter\": 158.8, \"worst area\": 1956.0, \"worst smoothness\": 0.1238, \"worst compactness\": 0.1866, \"worst concavity\": 0.2416, \"worst concave points\": 0.186, \"worst symmetry\": 0.275, \"worst fractal dimension\": 0.08902}",
+          "output": "0",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "mean radius",
+            "mean texture",
+            "mean perimeter",
+            "mean area",
+            "mean smoothness",
+            "mean compactness",
+            "mean concavity",
+            "mean concave points",
+            "mean symmetry",
+            "mean fractal dimension",
+            "radius error",
+            "texture error",
+            "perimeter error",
+            "area error",
+            "smoothness error",
+            "compactness error",
+            "concavity error",
+            "concave points error",
+            "symmetry error",
+            "fractal dimension error",
+            "worst radius",
+            "worst texture",
+            "worst perimeter",
+            "worst area",
+            "worst smoothness",
+            "worst compactness",
+            "worst concavity",
+            "worst concave points",
+            "worst symmetry",
+            "worst fractal dimension"
+          ],
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "diabetes",
+      "examples": [
+        {
+          "input": "{\"age\": 0.038075906433423026, \"sex\": 0.05068011873981862, \"bmi\": 0.061696206518683294, \"bp\": 0.0218723855140367, \"s1\": -0.04422349842444599, \"s2\": -0.03482076283769895, \"s3\": -0.04340084565202491, \"s4\": -0.002592261998183278, \"s5\": 0.019907486170462722, \"s6\": -0.01764612515980379}",
+          "output": "151.0",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "age",
+            "sex",
+            "bmi",
+            "bp",
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s5",
+            "s6"
+          ],
+          "metadata_task_type": "regression"
+        },
+        {
+          "input": "{\"age\": -0.0018820165277906047, \"sex\": -0.044641636506989144, \"bmi\": -0.051474061238800654, \"bp\": -0.02632752814785296, \"s1\": -0.008448724111216851, \"s2\": -0.019163339748222204, \"s3\": 0.07441156407875721, \"s4\": -0.03949338287409329, \"s5\": -0.0683315470939731, \"s6\": -0.092204049626824}",
+          "output": "75.0",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "age",
+            "sex",
+            "bmi",
+            "bp",
+            "s1",
+            "s2",
+            "s3",
+            "s4",
+            "s5",
+            "s6"
+          ],
+          "metadata_task_type": "regression"
+        }
+      ]
+    },
+    {
+      "dataset": "wine",
+      "examples": [
+        {
+          "input": "{\"alcohol\": 14.23, \"malic_acid\": 1.71, \"ash\": 2.43, \"alcalinity_of_ash\": 15.6, \"magnesium\": 127.0, \"total_phenols\": 2.8, \"flavanoids\": 3.06, \"nonflavanoid_phenols\": 0.28, \"proanthocyanins\": 2.29, \"color_intensity\": 5.64, \"hue\": 1.04, \"od280/od315_of_diluted_wines\": 3.92, \"proline\": 1065.0}",
+          "output": "0",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "alcohol",
+            "malic_acid",
+            "ash",
+            "alcalinity_of_ash",
+            "magnesium",
+            "total_phenols",
+            "flavanoids",
+            "nonflavanoid_phenols",
+            "proanthocyanins",
+            "color_intensity",
+            "hue",
+            "od280/od315_of_diluted_wines",
+            "proline"
+          ],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"alcohol\": 13.2, \"malic_acid\": 1.78, \"ash\": 2.14, \"alcalinity_of_ash\": 11.2, \"magnesium\": 100.0, \"total_phenols\": 2.65, \"flavanoids\": 2.76, \"nonflavanoid_phenols\": 0.26, \"proanthocyanins\": 1.28, \"color_intensity\": 4.38, \"hue\": 1.05, \"od280/od315_of_diluted_wines\": 3.4, \"proline\": 1050.0}",
+          "output": "0",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "alcohol",
+            "malic_acid",
+            "ash",
+            "alcalinity_of_ash",
+            "magnesium",
+            "total_phenols",
+            "flavanoids",
+            "nonflavanoid_phenols",
+            "proanthocyanins",
+            "color_intensity",
+            "hue",
+            "od280/od315_of_diluted_wines",
+            "proline"
+          ],
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "digits",
+      "examples": [
+        {
+          "input": "{\"pixel_0_0\": 0.0, \"pixel_0_1\": 0.0, \"pixel_0_2\": 5.0, \"pixel_0_3\": 13.0, \"pixel_0_4\": 9.0, \"pixel_0_5\": 1.0, \"pixel_0_6\": 0.0, \"pixel_0_7\": 0.0, \"pixel_1_0\": 0.0, \"pixel_1_1\": 0.0, \"pixel_1_2\": 13.0, \"pixel_1_3\": 15.0, \"pixel_1_4\": 10.0, \"pixel_1_5\": 15.0, \"pixel_1_6\": 5.0, \"pixel_1_7\": 0.0, \"pixel_2_0\": 0.0, \"pixel_2_1\": 3.0, \"pixel_2_2\": 15.0, \"pixel_2_3\": 2.0, \"pixel_2_4\": 0.0, \"pixel_2_5\": 11.0, \"pixel_2_6\": 8.0, \"pixel_2_7\": 0.0, \"pixel_3_0\": 0.0, \"pixel_3_1\": 4.0, \"pixel_3_2\": 12.0, \"pixel_3_3\": 0.0, \"pixel_3_4\": 0.0, \"pixel_3_5\": 8.0, \"pixel_3_6\": 8.0, \"pixel_3_7\": 0.0, \"pixel_4_0\": 0.0, \"pixel_4_1\": 5.0, \"pixel_4_2\": 8.0, \"pixel_4_3\": 0.0, \"pixel_4_4\": 0.0, \"pixel_4_5\": 9.0, \"pixel_4_6\": 8.0, \"pixel_4_7\": 0.0, \"pixel_5_0\": 0.0, \"pixel_5_1\": 4.0, \"pixel_5_2\": 11.0, \"pixel_5_3\": 0.0, \"pixel_5_4\": 1.0, \"pixel_5_5\": 12.0, \"pixel_5_6\": 7.0, \"pixel_5_7\": 0.0, \"pixel_6_0\": 0.0, \"pixel_6_1\": 2.0, \"pixel_6_2\": 14.0, \"pixel_6_3\": 5.0, \"pixel_6_4\": 10.0, \"pixel_6_5\": 12.0, \"pixel_6_6\": 0.0, \"pixel_6_7\": 0.0, \"pixel_7_0\": 0.0, \"pixel_7_1\": 0.0, \"pixel_7_2\": 6.0, \"pixel_7_3\": 13.0, \"pixel_7_4\": 10.0, \"pixel_7_5\": 0.0, \"pixel_7_6\": 0.0, \"pixel_7_7\": 0.0}",
+          "output": "0",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "pixel_0_0",
+            "pixel_0_1",
+            "pixel_0_2",
+            "pixel_0_3",
+            "pixel_0_4",
+            "pixel_0_5",
+            "pixel_0_6",
+            "pixel_0_7",
+            "pixel_1_0",
+            "pixel_1_1",
+            "pixel_1_2",
+            "pixel_1_3",
+            "pixel_1_4",
+            "pixel_1_5",
+            "pixel_1_6",
+            "pixel_1_7",
+            "pixel_2_0",
+            "pixel_2_1",
+            "pixel_2_2",
+            "pixel_2_3",
+            "pixel_2_4",
+            "pixel_2_5",
+            "pixel_2_6",
+            "pixel_2_7",
+            "pixel_3_0",
+            "pixel_3_1",
+            "pixel_3_2",
+            "pixel_3_3",
+            "pixel_3_4",
+            "pixel_3_5",
+            "pixel_3_6",
+            "pixel_3_7",
+            "pixel_4_0",
+            "pixel_4_1",
+            "pixel_4_2",
+            "pixel_4_3",
+            "pixel_4_4",
+            "pixel_4_5",
+            "pixel_4_6",
+            "pixel_4_7",
+            "pixel_5_0",
+            "pixel_5_1",
+            "pixel_5_2",
+            "pixel_5_3",
+            "pixel_5_4",
+            "pixel_5_5",
+            "pixel_5_6",
+            "pixel_5_7",
+            "pixel_6_0",
+            "pixel_6_1",
+            "pixel_6_2",
+            "pixel_6_3",
+            "pixel_6_4",
+            "pixel_6_5",
+            "pixel_6_6",
+            "pixel_6_7",
+            "pixel_7_0",
+            "pixel_7_1",
+            "pixel_7_2",
+            "pixel_7_3",
+            "pixel_7_4",
+            "pixel_7_5",
+            "pixel_7_6",
+            "pixel_7_7"
+          ],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"pixel_0_0\": 0.0, \"pixel_0_1\": 0.0, \"pixel_0_2\": 0.0, \"pixel_0_3\": 12.0, \"pixel_0_4\": 13.0, \"pixel_0_5\": 5.0, \"pixel_0_6\": 0.0, \"pixel_0_7\": 0.0, \"pixel_1_0\": 0.0, \"pixel_1_1\": 0.0, \"pixel_1_2\": 0.0, \"pixel_1_3\": 11.0, \"pixel_1_4\": 16.0, \"pixel_1_5\": 9.0, \"pixel_1_6\": 0.0, \"pixel_1_7\": 0.0, \"pixel_2_0\": 0.0, \"pixel_2_1\": 0.0, \"pixel_2_2\": 3.0, \"pixel_2_3\": 15.0, \"pixel_2_4\": 16.0, \"pixel_2_5\": 6.0, \"pixel_2_6\": 0.0, \"pixel_2_7\": 0.0, \"pixel_3_0\": 0.0, \"pixel_3_1\": 7.0, \"pixel_3_2\": 15.0, \"pixel_3_3\": 16.0, \"pixel_3_4\": 16.0, \"pixel_3_5\": 2.0, \"pixel_3_6\": 0.0, \"pixel_3_7\": 0.0, \"pixel_4_0\": 0.0, \"pixel_4_1\": 0.0, \"pixel_4_2\": 1.0, \"pixel_4_3\": 16.0, \"pixel_4_4\": 16.0, \"pixel_4_5\": 3.0, \"pixel_4_6\": 0.0, \"pixel_4_7\": 0.0, \"pixel_5_0\": 0.0, \"pixel_5_1\": 0.0, \"pixel_5_2\": 1.0, \"pixel_5_3\": 16.0, \"pixel_5_4\": 16.0, \"pixel_5_5\": 6.0, \"pixel_5_6\": 0.0, \"pixel_5_7\": 0.0, \"pixel_6_0\": 0.0, \"pixel_6_1\": 0.0, \"pixel_6_2\": 1.0, \"pixel_6_3\": 16.0, \"pixel_6_4\": 16.0, \"pixel_6_5\": 6.0, \"pixel_6_6\": 0.0, \"pixel_6_7\": 0.0, \"pixel_7_0\": 0.0, \"pixel_7_1\": 0.0, \"pixel_7_2\": 0.0, \"pixel_7_3\": 11.0, \"pixel_7_4\": 16.0, \"pixel_7_5\": 10.0, \"pixel_7_6\": 0.0, \"pixel_7_7\": 0.0}",
+          "output": "1",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "pixel_0_0",
+            "pixel_0_1",
+            "pixel_0_2",
+            "pixel_0_3",
+            "pixel_0_4",
+            "pixel_0_5",
+            "pixel_0_6",
+            "pixel_0_7",
+            "pixel_1_0",
+            "pixel_1_1",
+            "pixel_1_2",
+            "pixel_1_3",
+            "pixel_1_4",
+            "pixel_1_5",
+            "pixel_1_6",
+            "pixel_1_7",
+            "pixel_2_0",
+            "pixel_2_1",
+            "pixel_2_2",
+            "pixel_2_3",
+            "pixel_2_4",
+            "pixel_2_5",
+            "pixel_2_6",
+            "pixel_2_7",
+            "pixel_3_0",
+            "pixel_3_1",
+            "pixel_3_2",
+            "pixel_3_3",
+            "pixel_3_4",
+            "pixel_3_5",
+            "pixel_3_6",
+            "pixel_3_7",
+            "pixel_4_0",
+            "pixel_4_1",
+            "pixel_4_2",
+            "pixel_4_3",
+            "pixel_4_4",
+            "pixel_4_5",
+            "pixel_4_6",
+            "pixel_4_7",
+            "pixel_5_0",
+            "pixel_5_1",
+            "pixel_5_2",
+            "pixel_5_3",
+            "pixel_5_4",
+            "pixel_5_5",
+            "pixel_5_6",
+            "pixel_5_7",
+            "pixel_6_0",
+            "pixel_6_1",
+            "pixel_6_2",
+            "pixel_6_3",
+            "pixel_6_4",
+            "pixel_6_5",
+            "pixel_6_6",
+            "pixel_6_7",
+            "pixel_7_0",
+            "pixel_7_1",
+            "pixel_7_2",
+            "pixel_7_3",
+            "pixel_7_4",
+            "pixel_7_5",
+            "pixel_7_6",
+            "pixel_7_7"
+          ],
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "iris",
+      "examples": [
+        {
+          "input": "{\"sepal length (cm)\": 5.1, \"sepal width (cm)\": 3.5, \"petal length (cm)\": 1.4, \"petal width (cm)\": 0.2}",
+          "output": "0",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "sepal length (cm)",
+            "sepal width (cm)",
+            "petal length (cm)",
+            "petal width (cm)"
+          ],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"sepal length (cm)\": 4.9, \"sepal width (cm)\": 3.0, \"petal length (cm)\": 1.4, \"petal width (cm)\": 0.2}",
+          "output": "0",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "sepal length (cm)",
+            "sepal width (cm)",
+            "petal length (cm)",
+            "petal width (cm)"
+          ],
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic_classification_1",
+      "examples": [
+        {
+          "input": "{\"feat_0\": -1.6940693352657983, \"feat_1\": 1.4901390956502303, \"feat_2\": -0.059456465859312545, \"feat_3\": -1.3207995672461603, \"feat_4\": -0.6322154642579867, \"feat_5\": 0.8909034131361053, \"feat_6\": -0.6023854935483364, \"feat_7\": -2.0575523508292606, \"feat_8\": -1.6630268940149022, \"feat_9\": 1.0962389331575209}",
+          "output": "0",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"feat_0\": -1.7445154541906167, \"feat_1\": 0.7780582969818569, \"feat_2\": -1.187203087450285, \"feat_3\": 1.3442972891342766, \"feat_4\": 3.815269922388846, \"feat_5\": -3.241926028007299, \"feat_6\": -0.21962967609740924, \"feat_7\": 0.5224255076295953, \"feat_8\": 4.653186893816413, \"feat_9\": 1.792530963656023}",
+          "output": "1",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic_regression_2",
+      "examples": [
+        {
+          "input": "{\"feat_0\": -0.14274844564419553, \"feat_1\": -0.49447170347110325, \"feat_2\": 0.21056283954325614, \"feat_3\": -1.125310897727783, \"feat_4\": -1.1923554535329302, \"feat_5\": 0.7936148799852879, \"feat_6\": -0.9241224487347269, \"feat_7\": 0.6582237557164222, \"feat_8\": 0.4204155186987109, \"feat_9\": -1.0979829033666049}",
+          "output": "-37.52143073050451",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "regression"
+        },
+        {
+          "input": "{\"feat_0\": -0.2707674135077965, \"feat_1\": 0.5730056570754838, \"feat_2\": -0.4123651879469255, \"feat_3\": -0.4974059905223215, \"feat_4\": 0.22780724865114005, \"feat_5\": -0.3192346504938846, \"feat_6\": 1.0156672421258446, \"feat_7\": -1.56945085741668, \"feat_8\": -1.0100681253146973, \"feat_9\": -1.6269904119681504}",
+          "output": "-191.75933637505582",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "regression"
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic_classification_3",
+      "examples": [
+        {
+          "input": "{\"feat_0\": -0.8648120257506973, \"feat_1\": -2.0185134588849643, \"feat_2\": -1.70696603353646, \"feat_3\": 1.1135406739633866, \"feat_4\": -0.06255692115728953, \"feat_5\": -0.00029843019070295394, \"feat_6\": -0.3470026011149394, \"feat_7\": -1.4325657896878894, \"feat_8\": -0.6369073196495351, \"feat_9\": -0.9591119038667839}",
+          "output": "1",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "classification"
+        },
+        {
+          "input": "{\"feat_0\": 0.5172223039142886, \"feat_1\": 1.233791154964245, \"feat_2\": -0.38808246829165505, \"feat_3\": -1.3821940222645959, \"feat_4\": -1.1670133995964471, \"feat_5\": 0.15172959287053375, \"feat_6\": -1.8744952270165216, \"feat_7\": 2.525407082186024, \"feat_8\": -0.8842217428174017, \"feat_9\": 0.10502521589661962}",
+          "output": "0",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "classification"
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic_regression_4",
+      "examples": [
+        {
+          "input": "{\"feat_0\": 1.3362579344804064, \"feat_1\": -0.12856016489376973, \"feat_2\": -1.6350676084204243, \"feat_3\": 0.6008080409603581, \"feat_4\": -1.3063178823907624, \"feat_5\": -1.5039187817697277, \"feat_6\": -0.40791098109491075, \"feat_7\": 0.7570662881795884, \"feat_8\": 0.7702637123169298, \"feat_9\": -0.4835441360769373}",
+          "output": "-75.70383492519049",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "regression"
+        },
+        {
+          "input": "{\"feat_0\": 1.002093374199738, \"feat_1\": -1.7800855566086458, \"feat_2\": 0.6319694439907153, \"feat_3\": -0.201704263590219, \"feat_4\": 0.29502550785022374, \"feat_5\": -0.0298406851111089, \"feat_6\": 0.031874017346029036, \"feat_7\": -0.1645872988555725, \"feat_8\": -2.084570674548374, \"feat_9\": -0.20741352432284627}",
+          "output": "-7.387051894020351",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "feat_0",
+            "feat_1",
+            "feat_2",
+            "feat_3",
+            "feat_4",
+            "feat_5",
+            "feat_6",
+            "feat_7",
+            "feat_8",
+            "feat_9"
+          ],
+          "metadata_task_type": "regression"
+        }
+      ]
+    }
+  ]
+}
